@@ -85,6 +85,11 @@ function handleStartTimer() {
       clearInterval(timerInterval);
       inputRef.disabled = false;
       inputRef.classList.remove('disable-input');
+      timeValueArr[0].textContent = '00';
+      timeValueArr[1].textContent = '00';
+      timeValueArr[2].textContent = '00';
+      timeValueArr[3].textContent = '00';
+      return; 
     }
     const convertedTime = convertMs(differ);
 
